@@ -44,8 +44,10 @@ var twoSum = function(nums, target) {
     var tmp = target - nums[i];
     if (a[tmp] !== undefined) return [a[tmp], i];
 
-    // 每次循环都把 赋值当前i赋值给 a数组 
-    // a[2] = 0  a[15] = 1 a[11] = 2 a[7] = 3 直到 a[tmp] 有了值说明已经找到了那个合适的  很棒！！！ 
+    /*  每次循环都把 赋值当前i赋值给 a数组 
+        a[2] = 0  a[15] = 1 a[11] = 2 a[7] = 3 直到 a[tmp] 有了值说明已经找到了那个合适的  很棒！！！
+        很不错的一种思路
+     */
     a[nums[i]] = i;
   }
 };

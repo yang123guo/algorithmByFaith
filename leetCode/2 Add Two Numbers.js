@@ -25,7 +25,7 @@ var addTwoNumbers = function(l1, l2) {
 };
 
 
-// ���˵Ľⷨ
+// github上的答案
 var addTwoNumbers = function(l1, l2) {
   var add = 0
     , ans
@@ -35,6 +35,7 @@ var addTwoNumbers = function(l1, l2) {
     var a = l1 ? l1.val : 0
       , b = l2 ? l2.val : 0;
 
+    // 新结果等于对应位置求和 然后再加上下一位进上来的 然后取个位数
     var sum = a + b + add;
     add = ~~(sum / 10);
 

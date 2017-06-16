@@ -6,3 +6,8 @@
  * @param {string} s
  * @return {number}
  */
+
+ var lengthOfLongestSubstring = function(s) {
+  var hash = {};
+  var start = 0;
+  var ans = 0;

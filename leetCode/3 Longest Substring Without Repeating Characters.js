@@ -7,7 +7,20 @@
  * @return {number}
  */
 
- var lengthOfLongestSubstring = function(s) {
-  var hash = {};
-  var start = 0;
-  var ans = 0;
+var lengthOfLongestSubstring = function(s) {
+    var hash = {};
+    var start = 0;
+    var ans = 0;
+    
+    for (var i = 0, len = s.length; i < len; i++) {
+        var item = s[i];
+
+        if (!hash[item])
+          hash[item] = true;
+        else {
+          // item 已经在 substring 中存在了
+          for (; ;) {
+            if (s[start] === item) {
+              start++;
+              break;
+            }

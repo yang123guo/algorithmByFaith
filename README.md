@@ -1,3 +1,5 @@
 ## sum algorithm
 
-#### 包括leetCode
+#### Includes
+1. leetcode
+

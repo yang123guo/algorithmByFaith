@@ -1,3 +1,7 @@
+/**
+ * 去除多维数组中重复项
+ */
+
 var arr = [1,2,3,[1,1,2],[3,2],2];
 
 var result = arr.reduce(function(v, i) {
